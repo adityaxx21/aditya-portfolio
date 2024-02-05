@@ -5,17 +5,8 @@ const currentYear = new Date().getFullYear();
 
 <footer>
 	<div class="group">
-		<p>
-			Designed & Developed in Portland with <a href="https://astro.build/">Astro</a>
-			<Icon icon="rocket-launch" size="1.2em" />
-		</p>
-		<p>&copy; {currentYear} Jeanine White</p>
+		<p>&copy; 2024 Mohammad Aditya Novisansyah</p>
 	</div>
-	<p class="socials">
-		<a href="https://twitter.com/me"> Twitter</a>
-		<a href="https://github.com/me"> GitHub</a>
-		<a href="https://codepen.io/me"> CodePen</a>
-	</p>
 </footer>
 <style>
 	footer {
@@ -27,6 +18,7 @@ const currentYear = new Date().getFullYear();
 		text-align: center;
 		color: var(--gray-400);
 		font-size: var(--text-sm);
+		margin: auto;
 	}
 
 	footer a {
@@ -41,19 +33,6 @@ const currentYear = new Date().getFullYear();
 		text-decoration-color: currentColor;
 	}
 
-	.group {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.socials {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
-
 	@media (min-width: 50em) {
 		footer {
 			flex-direction: row;
@@ -65,10 +44,6 @@ const currentYear = new Date().getFullYear();
 			flex-direction: row;
 			gap: 1rem;
 			flex-wrap: wrap;
-		}
-
-		.socials {
-			justify-content: flex-end;
 		}
 	}
 </style>
