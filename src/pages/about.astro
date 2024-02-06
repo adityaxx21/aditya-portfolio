@@ -1,120 +1,215 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import Pill from "../components/Pill.astro";
+import Grid from "../components/Grid.astro";
 ---
 
-<BaseLayout title="About | Jeanine Wssshite" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title="About | Mohammad Aditya Noviansyah"
+  description="About Mohammad Aditya Noviansyah Profile"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About Me"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/at-work.jpg"
+          alt="Jeanine White at work with a colleague"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            Results-driven Software Engineer with a background in Informatics
+            Engineering from Universitas Brawijaya. Received funding for an
+            entrepreneurial venture in web-based laptop selection consultation
+            during university. Accomplished 3rd place in the INOTEK competition
+            in Kediri in 2019 and secured a scholarship from the Kediri city
+            government in 2018.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p class="title">
+            Brawijaya University - Bancelor Degree, Informatics Engineering
+          </p>
+          <p class="title">June 2017 - June 2021</p>
+          <p>
+            Upon graduating from Brawijaya University with a major in
+            Informatics Engineering, I have acquired experience through active
+            involvement in organizations, competitions, and my academic
+            pursuits. Some notable achievements include:
+          </p>
+          <div class="list-point">
+            <ul>
+              <li>
+                Publish journal recommendation laptop using AHP - TOPSIS methods
+                (2021)
+              </li>
+              <li>
+                Received funding for entrepreneurial venture from Brawijaya
+                University with "Web-based laptop selection consultation."
+                (2020)
+              </li>
+              <li>Won INOTEK competition Kediri with 3rd grade (2019)</li>
+              <li>Scholarship from Kediri city government (2018)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Work Experince</h2>
+        <div class="content">
+          <p class="title">Refactory - Software Engineer</p>
+          <p class="title">Dec 2022 - Dec 2023</p>
+          <p>
+            As software engineer, had some experience on internal project and
+            also international project
+          </p>
+          <div class="list-point">
+            <ul>
+              <li>
+                Develop sev-2 product for adding feature or maintenace feature
+                as Product Developer
+              </li>
+              <li>Join dev with RecRe Located in US as fullstack developer</li>
+              <li>
+                Helping another team for working on apps such as: Hanoman and
+                MNC
+              </li>
+              <li>
+                Create migrating tool from mysql to postgresql in databases
+                refactory.sev-2.com
+              </li>
+              <li>Join dev with VoxTeneo to working on studyspaces.brussels</li>
+            </ul>
+          </div>
+        </div>
 
-		<ContactCTA />
-	</div>
+        <div class="content">
+          <p class="title">Refactory - Intern Software Engineer</p>
+          <p class="title">Sept 2022 - Dec 2022</p>
+          <p>
+            As software engineer, had some experience on internal project and
+            also international project
+          </p>
+          <div class="list-point">
+            <ul>
+              <li>
+                Creating feature on sev-2 like add user attribute, reusable
+                component, and cv generator
+              </li>
+              <li>
+                Join dev with symbolic id, creating feature payment for backend
+                developer
+              </li>
+              <li>
+                Initiate project GraphQL with framework Apollo GraphQL for
+                improving performance of refactory.sev-2.com rest API. And for
+                the result performance can be improved until 200%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <Grid variant="pills">
+          {
+            ['PHP', 'JavaScript', 'Laravel', 'Apollo GraphQL', 'Phabricator', 'Django'].map((brand) => (
+              <Pill>{brand}</Pill>
+            ))
+          }
+        </Grid>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .title {
+    font-size: var(--text-lg);
+    color: var(--gray-0);
+    font-weight: bold;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  .list-point ul {
+    list-style-type: none;
+    padding-left: 1em;
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .list-point ul li::before {
+    content: "\2022"; /* Unicode character for a black dot */
+    color: var(--gray-200);
+    display: inline-block;
+    width: 1em; /* Adjust as needed for spacing */
+    margin-left: -1em; /* Negative margin to overlap with padding */
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
