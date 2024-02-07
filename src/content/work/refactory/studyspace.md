@@ -1,6 +1,6 @@
 ---
 title: Studyspaces Brussels
-publishDate: 2022-10-01
+publishDate: 2023-11-01
 img: /assets/refactory/studyspace.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
@@ -12,4 +12,4 @@ tags:
   - Backend
   - Frontend
 url:
-  recrebox.com
+  https://studyspaces.brussels/

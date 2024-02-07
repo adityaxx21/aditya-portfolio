@@ -1,6 +1,6 @@
 ---
 title: Symbolic
-publishDate: 2022-10-01
+publishDate: 2022-11-01
 img: /assets/refactory/symbolic.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
@@ -9,4 +9,4 @@ tags:
   - Dev
   - Backend
 url: |
-  symbolic.id
+  https://symbolic.id/

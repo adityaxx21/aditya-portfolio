@@ -7,6 +7,8 @@ import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
+import RedirectAction from '../../components/RedirectAction.astro';
+
 
 interface Props {
 	entry: CollectionEntry<'work'>;
@@ -25,6 +27,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const url = entry.data.url;
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -49,6 +52,15 @@ const { Content } = await entry.render();
 					<div class="content">
 						<Content />
 					</div>
+				</div>
+				<div style="
+				display: flex;
+				align-items: center;
+				justify-content: center;">
+					<RedirectAction href={url}>
+						Visit Site
+						<Icon icon="redirect-icon" size="1.2em" />
+					</RedirectAction>
 				</div>
 			</main>
 		</div>
