@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro preferences disable devToolbar && astro dev --host 0.0.0.0",
+    "start": "astro preferences disable devToolbar && node dist/server/entry.mjs",
     "hide-toolbar": "astro preferences disable devToolbar",
     "build": "astro check && astro build",
     "preview": "astro preview",
