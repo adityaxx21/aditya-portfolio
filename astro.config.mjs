@@ -5,9 +5,5 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
   },
-
   output: "hybrid",
-  adapter: node({
-    mode: "standalone",
-  }),
 });
